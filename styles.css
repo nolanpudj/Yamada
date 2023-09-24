@@ -1,0 +1,1269 @@
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+::-webkit-scrollbar{
+    width:8px
+}
+
+::-webkit-scrollbar-track{
+    background: #DFD6FF;
+}
+
+::-webkit-scrollbar-thumb{
+    background: rgba(145, 115, 243, 1);
+}
+
+::placeholder {
+    font-family: Poppins, Verdana, Tahoma, sans-serif;
+}
+
+input {
+    color: #5e5e5e;
+    font-family: Poppins, Verdana, Tahoma, sans-serif;
+}
+
+body{
+    margin: 0;
+}
+
+input:placeholder-shown {
+    text-overflow: ellipsis;
+}
+
+#burger{
+    display: none;
+}
+
+/*Header*/
+header{
+    position: sticky;
+    z-index: 3;
+    display: flex;
+    width: calc(100%);
+    justify-content: space-between;
+    align-items: center;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 8px;
+    background-color: white;
+    padding-left: 120px;
+    padding-right: 120px;
+}
+
+header img{
+    width: 100px;
+    margin-left: 120px;
+}
+
+.navigation-bar{
+    text-align: right;
+}
+
+.navigation-list-footer{
+    padding: 0;
+    list-style-type: none;
+}
+
+.navigation-list-footer li{
+    margin-bottom: 20px;
+}
+
+.navigation-list{
+    list-style-type: none;
+}
+
+.navigation-list li{
+    display: inline;
+}
+
+.navigation-item{
+    text-decoration: none;
+    font-weight: 600;
+    font-family: Poppins, Verdana, Tahoma, sans-serif;
+    color: #5e5e5e;
+    border: solid rgba(255, 255, 255, 0) 3px;
+    margin: 0px 0px 0px 0px;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0);
+    transition: border-bottom 0.2s;
+}
+
+.navigation-item:hover {
+    color: #9173F3;
+    font-weight: 600;
+    transition: ease-in-out 0.1s;
+}
+
+.navigation-item-active{
+    color: #9173F3;
+    font-weight: 600;
+    transition: ease-in-out 0.1s;
+}
+
+
+/*Main*/
+main{
+    font-family: Poppins, Verdana, Tahoma, sans-serif;
+}
+
+.hero-section{
+    position: relative;
+    align-items: center;
+    justify-items: center;
+    flex-direction: row;
+    display: flex;
+    height: 100%;
+    object-fit: cover;
+    background-color: #1D1238;
+}
+
+.hero-section img{
+    width: 99.3vw;
+}
+
+.hero-section div{
+    position: absolute;
+    width: 700px;
+    padding: 160px;
+    object-fit: cover;
+}
+
+.hero-section div img{
+    position: absolute;
+}
+
+.home-title div{
+    width: auto;
+    left: 45%;
+}
+
+.hero-section div h1{
+    color: white;
+    font-weight: 800;
+    font-size: 64px;
+}
+
+.hero-section div h2{
+    color: #DFD6FF;
+    font-size: x-large;
+    font-weight: 600;
+}
+
+.hero-section div h3{
+    color: white;
+    font-size: x-large;
+    font-weight: 600;
+}
+
+.home-title div h1{
+    font-size: 64px;
+}
+
+#hero-aboutus{
+    opacity: 0.1;
+}
+
+#hero-aboutus-1{
+    position: absolute;
+    width: auto;
+    height: auto;
+    left: 428px;
+    top: 120px;
+    filter: drop-shadow(0px 0px 16px rgba(0, 0, 0, 0.64));
+}
+
+#hero-aboutus-2{
+    position: absolute;
+    width: auto;
+    height: auto;
+    right: 80px;
+    top: 310px;
+    filter: drop-shadow(0px 0px 16px rgba(0, 0, 0, 0.64));
+}
+
+.motorcycle div h3, .motorcycle div h2{
+    font-size: 24px;
+    margin-top: 2%;
+}
+
+.motorcycle-purple-highlight{
+    color: #9173F3;
+    border-bottom: solid #9173F3 3px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    font-size: large;
+    width: 175px;
+    padding-bottom: 10px;
+    transition: width 0.7s;
+}
+
+.motorcycle-purple-highlight:hover{
+    width: 275px;
+}
+
+.favorites-container, .motorcycles-cont{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    align-items: center;
+    justify-items: center;
+    margin-bottom: 100px;
+    row-gap: 40px;
+}
+
+.favorites-container{
+    position: relative;
+}
+
+.purple-rectangle{
+    display: flex;
+    position: absolute;
+    z-index: -1;
+    height: 270px;
+    width: 99.3vw;
+    background-color: #DFD6FF;
+}
+
+.motorcycle-desc{
+    padding-top: 0%;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.motorcycle-desc h4{
+    font-weight: 800;
+    font-size: xx-large;
+    color: #5e5e5e;
+    margin-top: 0px;
+    margin-bottom: 24px;
+}
+
+.motorcycle-desc div h5{
+    color: #DFD6FF;
+    font-weight: 600;
+    font-size: 24px;
+}
+
+.motorcycle-desc div h2{
+    font-weight: 600;
+    max-width: 160px;
+    color: #9173F3;
+    font-size: 24px;
+}
+
+.motorcycle-card{
+    text-align: left;
+    max-width: 320px;
+    height: auto;
+    border-radius: 20px;
+    box-shadow: #1d12382c 8px 8px 16px;
+    padding: 0;
+    margin: 0;
+    transform: scale(100%);
+    transition: box-shadow 0.3s, transform 0.3s;
+    background-color: white;
+}
+
+.motorcycle-card-mobile{
+    display: none;
+    text-align: left;
+    max-width: 320px;
+    height: auto;
+    border-radius: 20px;
+    box-shadow: #1d12382c 8px 8px 16px;
+    padding: 0;
+    margin: 0;
+    transform: scale(100%);
+    transition: box-shadow 0.3s, transform 0.3s;
+    background-color: white;
+}
+
+.motorcycle-card-mobile:hover{
+    transform: scale(110%);
+    box-shadow: #1d1238bb 8px 8px 16px;
+}
+
+.motorcycle-card:hover{
+    transform: scale(110%);
+    box-shadow: #1d1238bb 8px 8px 16px;
+}
+
+.motorcycle-card img{
+    width: 100%;
+    border-radius: 18px 18px 0px 0px;
+}
+
+.motorcycle-series-price{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0%;
+    height: 64px;
+}
+
+.view-more-div{
+    text-align: center;
+}
+
+#view-more{
+    text-align: center;
+    font-family: Poppins, Verdana, Tahoma, sans-serif;
+    color: #9173F3;
+    border: solid rgba(0, 0, 0, 0) 3px;
+    border-radius: 8px;
+    background-color: white;
+    font-weight: 600;
+    font-size: 16px;
+    transition: border 0.3s;
+    padding: 8px 16px 8px 16px;
+}
+
+#view-more:hover{
+    border: solid #DFD6FF 3px;
+}
+
+.history, .innovation, .the-team, .favorites, .events, .our-mission{
+    padding: 160px;
+    display: flex;
+    flex-direction: column;
+}
+
+.our-mission-head h1{
+    color: white;
+}
+
+.events{
+    margin-left: 3vw;
+    padding-top: 8vh;
+    padding-bottom: 0px;
+}
+
+.timeline{
+    display: flex;
+    flex-direction: row;
+    justify-items: center;
+    align-items: center;
+    position: relative;
+}
+
+.timeline div{
+    width: 25%;
+    align-items: top;
+    text-align: center;
+    background-image: linear-gradient(to right, 
+    rgba(255, 255, 255, 0), 
+    rgba(255, 255, 255, 0),
+    rgba(255, 255, 255, 0),
+    rgba(255, 255, 255, 255),
+    rgba(255, 255, 255, 255),
+    rgba(255, 255, 255, 255),
+    rgba(255, 255, 255, 0),
+    rgba(255, 255, 255, 0),
+    rgba(255, 255, 255, 0)
+    );
+}
+
+.timeline div img{
+    transform: scale(100%);
+    width: 48px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    transition: transform 0.7s, width 0.3s;
+}
+
+.timeline div img:hover {
+    transform: rotateZ(-270deg);
+    width: 72px;
+}
+
+.green-dash{
+    height: 0;
+    left: 10%;
+    width: 80%;
+    position: absolute;
+    border: solid #9173F3 3px;
+    border-style: dashed;
+    border-radius: 10px;
+    top: 50%
+}
+
+.outer-timeline{
+    position: relative;
+}
+
+.innovation{
+    background-image: url('Assets/innovation.svg');
+    background-size: cover;
+}
+
+.our-mission{
+    background-image: linear-gradient(to left, rgba(29, 18, 56, 0), rgba(29, 18, 56, 1))
+}
+
+.innovation-home{
+    display: flex;
+    height: 60vh;
+    align-items: center;
+    background-color: white;
+    padding: 160px;
+}
+
+
+.innovation-container{
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+    gap: 64px;
+}
+
+.innovation-container img{
+    width: 64px;
+    transition: transform 0.3s;
+}
+
+
+.innovation-container img:hover{
+    transform: scale(120%);
+}
+
+.innovation-container div{
+    width: 25%;
+}
+
+.purple-highlight{
+    display: inline;
+    background-color: #9173F3;
+    color: white;
+    padding-left: 24px;
+    padding-right: 24px;
+    font-weight: 600;
+    font-size: x-large;
+    width: auto;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.purple-highlight:hover{
+    background-color: #1D1238;
+    box-shadow: 8px 8px #9173F3;
+}
+
+.subtitle{
+    color: #1D1238;
+    font-weight: 800;
+    font-style: italic;
+    font-size: xx-large;
+}
+
+.the-team{
+    align-items: center;
+    justify-content: center;
+}
+
+.the-team-head{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 72%;
+    color: #5e5e5e;
+}
+
+.the-team-head h1{
+    font-size: 64px;
+    margin: 0%;
+}
+
+.teams{
+    margin-top: 60px;
+    display: grid;
+    gap: 50px;
+    grid-template-columns: auto auto auto;
+}
+
+.teams div img{
+    width: 100%;
+    border-radius: 480px;
+    transition: box-shadow 0.5s, transform 0.3s;
+}
+
+.teams div img:hover{
+    transform: rotateZ(-16deg);
+    box-shadow: 16px 8px #9173F3;
+}
+
+.teams div{
+    text-align: center;
+    color: #5e5e5e;
+}
+
+.teams div h3{
+    font-size: 24px;
+    margin-bottom: 0px;
+}
+
+.register{
+    display: flex;
+    flex-direction: row;
+    margin: 0%;
+}
+
+
+.register-img{
+    flex-grow: 4;
+    flex-basis: 0;
+    width: 20%;
+}
+
+.register-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.register-data{
+    flex-grow: 5;
+    flex-basis: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    margin:0;
+}
+
+.register-data div h1, .register-data div h6{
+    margin: 5px;
+}
+
+.register-data div p{
+    color: #9173F3;
+    margin-bottom: 50px;
+}
+
+.register-form{
+    width: 28vw;
+    color:#5e5e5e
+}
+
+.input-field{
+    width: 100%;
+    height: 48px;
+    border-radius: 16px;
+    padding: 8px 16px 8px 16px;
+    border: solid #E5E5E5;
+    outline: solid white 0px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    transition: outline 0.4s, background-color 0.3s;
+}
+
+.input-field:hover {
+    border: solid #DFD6FF;
+    outline: solid #9173F3 2px;
+    transition: ease-in-out 0.1s;
+}
+
+.input-field:focus {
+    background-color: #DFD6FF;
+    color: #9173F3;
+}
+
+.register-button{
+    width: 100%;
+    height: 48px;
+    border-radius: 16px;
+    padding: auto;
+    border: solid #E5E5E5;
+    background-color: #9173F3;
+    color: white;
+    font-size: 16px;
+    margin-top: 4vh;
+    transition: border 0.5s, background-color 0.5s;
+}
+
+.register-button:hover{
+    border: solid #9173F3 1px;
+    background-color: #9173F3;
+    transition: ease-in-out 0.1s;
+}
+
+.view-collection-button{
+    font-size: medium;  
+    font-family: Poppins, Verdana, Tahoma, sans-serif;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 24px;
+    
+    width: 180px;
+    height: 48px;
+    
+    border: solid #9173F3 1px;
+    color: white;
+    background: #9173F3;
+    border-radius: 16px;
+    transition: ease-in-out 0.3s;
+}
+
+.view-collection-button:hover{
+    width: 192px;
+    color: #9173F3;
+    border: solid #9173F3 1px;
+    background-color: rgba(255, 255, 255, 0.85);
+}
+
+.gender-male, .gender-female{
+    margin-top: 15px;
+    margin-bottom: 24px;
+    filter: hue-rotate(30deg) brightness(1.1);
+}
+
+.gender-label-male{
+    margin-right: 40px;
+}
+
+.terms {
+    filter: hue-rotate(30deg) brightness(1.1);
+}
+
+.event-banner{
+    color: white;
+    margin: auto;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    overflow: wrap;
+    width: 72%;
+    height: 24%;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    background-color: #1D1238;
+    border-radius: 16px;
+    padding: 3.5rem 5rem 3.5rem 5rem;
+    transition: width 0.5s, height 0.3s, box-shadow 0.3s;
+}
+
+.event-banner:hover{
+    width: 80%;
+    box-shadow: gray 5px 10px 10px;
+}
+
+.event-banner .event-banner-desc{
+    margin-top: 8px;
+    max-width: 441px;
+    transition: max-width 0.1s;
+}
+
+.event-banner-icon{
+    height: 24px;
+    width: 24px;
+}
+
+.event-banner-row{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 32px ;
+}
+
+.event-banner-row div{
+    display: flex;
+    align-items: center;
+}
+
+.event-banner-column{
+    flex: 25%;
+    margin: 8px;
+}
+
+.event-clock{
+    margin-left: 2rem;
+}
+
+#event-banner-1{
+    background-image:
+    linear-gradient(to right, #1D1238 30%, rgba(80, 68, 65, 0)),
+    url('Assets/event-banner\ \(2\).png');
+    background-size: cover;
+}
+
+#event-banner-2{
+    background-image:
+    linear-gradient(to right, #1D1238 30%, rgba(80, 68, 65, 0)),
+    url('Assets/event-banner\ \(3\).png');
+    background-size: cover;
+}
+
+#event-banner-3{
+    background-image:
+    linear-gradient(to right, #1D1238 30%, rgba(80, 68, 65, 0)),
+    url('Assets/event-banner\ \(4\).png');
+    background-size: cover;
+}
+
+#event-banner-4{
+    background-image:
+    linear-gradient(to right, #1D1238 30%, rgba(80, 68, 65, 0)),
+    url('Assets/event-banner\ \(1\).png');
+    background-size: cover;
+}
+
+.whoweare{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 7.5rem;
+    margin-bottom: 7.5rem;
+    column-gap: 6rem;
+    padding: 60px;
+}
+
+
+
+.whoweare-head{
+    display:flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+    width: 366px;
+}
+
+.whoweare-image{
+    display: flex;
+    width: 100%;
+    border-radius: 16px;
+}
+
+
+
+/*Footer*/
+footer{
+    padding-top: 100px;
+    display: flex;
+    color: #5e5e5e;
+}
+footer div{
+    position: relative;
+    display: flex;
+    width: calc(100% - 22px);
+    justify-content: space-between;
+    align-content: center;
+    align-items: flex-start;
+    left : 0;
+    right: 0;
+    padding: 8px;
+    font-family: Poppins, Verdana, Tahoma, sans-serif;
+    border-top: solid gainsboro 1px;
+}
+
+footer div div{
+    display: flex;
+    width: 80%;
+    flex-direction: column;
+    align-items: flex-start;
+    border-top: none;
+    padding: 0;
+    right: 0;
+    left: 30px;
+}
+
+footer div div div{
+    left: 0;
+    text-align: justify;
+}
+
+.social-media{
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+}
+
+.social-media-link {
+    position: relative;
+    display: inline-block;
+}
+
+/*header footer if screen <750px  (TABLET)*/
+@media only screen and (max-width: 768px){
+
+    header{
+        flex-direction: column;
+    }
+
+    header img{
+        margin: 0%;
+    }
+
+    .navigation-list{
+        margin-right: 0%;
+    }
+
+    .whoweare{
+        flex-direction: column;
+    }
+
+    .whoweare-head{
+        align-items: center;
+        text-align: center;
+        width: 100%;
+    }
+
+    .hero-section{
+        background-color: black;
+        z-index: -2;
+    }
+
+    .hero-section img{
+        width: 100%;
+        height: 100vh;
+        object-fit: cover;
+        opacity: 0.5;
+        z-index: -1;
+    }
+
+    .hero-section div{
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .hero-section div h3{
+        width: 60vw;
+    }
+    
+    .home-title div{
+        left: 0%;
+        padding: 64px;
+    }
+
+    .motorcycle-card-mobile{
+        display: block;
+    }
+
+    .purple-rectangle{
+        height: 800px
+    }
+
+    .event-banner{
+        width: 80vw;
+        padding: 12vw;
+        transition: ease-in-out 0.3s;
+    }
+
+    .event-banner-desc{
+        display: none;
+    }
+
+    .event-banner:hover .event-banner-desc{
+        display: block;
+    }
+
+    .history, .innovation, .our-mission{
+        align-items: center;
+        justify-content: center;
+    }
+
+    .history div h4, .history div h1, .innovation div h4, .innovation div h1, .events div h4, .events div h1, .our-mission div h4, .our-mission div h1, .whoweare div h4, .whoweare div h1{
+        text-align: center;
+    }
+
+    .history-head, .events-head, .our-mission-head{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;    
+    }
+
+    .timeline div h1{
+        font-size: medium;
+    }
+
+    .timeline div h3{
+        font-size: small;
+    }
+
+    .innovation-container, .our-mission-cont{
+        flex-direction: column;
+    }
+
+    .innovation-container div, .our-mission-cont div{
+        width: 80vw;
+        text-align: center;
+        margin-bottom: 35px;
+    }
+
+    .teams{
+        width: 72vw;
+        grid-template-columns: auto auto;
+    }
+    
+    .register-data{
+        margin: 10vw;
+    }
+
+    .register-form{
+        margin: auto;
+        width: 80vw;
+    }
+
+    .register-data div h1{
+        margin-top: 15px;
+        font-size: x-large;
+    }
+
+    .input-field{
+        width: 100%;
+        height: 48px;
+    }
+    
+    footer div{
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    footer div div{
+        align-items: center;
+        left: 0;
+    }
+
+    footer div div div{
+        left: 0;
+        text-align: center;
+    }
+    .navigation-bar{
+        align-self: center;
+        text-align: center;
+    }
+
+    .social-media-link:hover{
+        display: flex;
+    }
+
+    .our-mission-motorcycle{
+        z-index: -1;
+        opacity: 0.2;
+    }
+
+    .whoweare-head{
+        order: 2;
+    }
+    
+    .whoweare-image{
+        order: 1;
+    }
+
+    #event-banner-1{
+        background-image:
+        linear-gradient(to right, #1D1238 30%, #1d1238a5),
+        url('Assets/event-banner\ \(2\).png');
+        background-size: cover;
+    }
+    
+    #event-banner-2{
+        background-image:
+        linear-gradient(to right, #1D1238 30%, #1d1238a5),
+        url('Assets/event-banner\ \(3\).png');
+        background-size: cover;
+    }
+    
+    #event-banner-3{
+        background-image:
+        linear-gradient(to right, #1D1238 30%, #1d1238a5),
+        url('Assets/event-banner\ \(4\).png');
+        background-size: cover;
+    }
+    
+    #event-banner-4{
+        background-image:
+        linear-gradient(to right, #1D1238 30%, #1d1238a5),
+        url('Assets/event-banner\ \(1\).png');
+        background-size: cover;
+    }
+
+    #hero-aboutus{
+        opacity: 0.1;
+    }
+    
+    #hero-aboutus-1{
+        opacity: 0.3;
+        width: 80vw;
+        left: 0px;  
+        top: 28px;
+    }
+    
+    #hero-aboutus-2{
+        opacity: 0.3;
+        width: 32vw;
+        right: 8px;  
+        top: 360px;
+    }
+
+    .motorcycle div h2, .motorcycle div h3{
+        font-size: 16px;
+    }
+
+}
+
+@media only screen and (max-width: 640px){
+    .whoweare{
+        flex-direction: column;
+    }
+
+    .whoweare-head p{
+        font-size: small;
+    }
+}
+/*header footer if screen <550px  (MOBILE PHONE)*/
+@media only screen and (max-width: 550px){
+    #burger{
+        display: inline;
+        position: absolute;
+        right: 4vw;
+        top: 1vh;
+        font-size: 30px;
+        color: #9173F3;
+        background-color: white;
+        border: none;
+        font-weight: 700;
+    }
+
+    .navigation-bar{
+        align-self: center;
+        display: none;
+    }
+    .navigation-item{
+        font-size: small;
+    }
+
+    .navigation-item:hover {
+        color: #9173F3;
+        font-weight: 600;
+        transition: ease-in-out 0.1s;
+    }
+
+    .navigation-item-active{
+        color: #9173F3;
+        font-weight: 600;
+        transition: ease-in-out 0.1s;
+    }
+    .navigation-list{
+        padding-left: 0%;
+    }
+
+    .navigation-list li{
+        display: flex;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .home-title img{
+        height: 100vh;
+        object-fit: cover;
+    }
+
+    .motorcycle div h3, .motorcycle div h2{
+        font-size: 16px;
+        width: 80vw;
+    }
+
+    .motorcycle-card-mobile{
+        display: none;
+    }
+
+    .purple-rectangle{
+        height: 1080px
+    }
+
+
+    .event-banner-row{
+        align-items: flex-start;
+    }
+
+    .motorcycle-card{
+        width: 240px;
+    }
+
+    .motorcycle-desc h4{
+        font-size: 24px;
+    }
+    
+    .motorcycle-desc div h5{
+        font-size: 18px;
+    }
+    
+    .motorcycle-desc div h2{
+        font-size: 18px;
+        max-width: 100px;
+    }
+
+    .the-team-head{
+        width: 80vw;
+    }
+
+    .the-team-head h1{
+        font-size: 48px;
+        margin: 0%;
+    }
+
+    .the-team-head h6{
+        width: 100%
+    }
+
+    .mobile-head{
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .mobile-head h4{
+        text-align: center;
+    }
+
+    .timeline{
+        width: 99vw;
+        flex-direction: column;
+    }
+
+    .green-dash{
+        display: none;
+    }
+
+    .teams{
+        grid-template-columns: auto;
+    }
+
+    .register-img{
+        flex-grow: 0;
+        display: hidden;
+        flex-basis: 0;
+        width: 20%;
+    }
+
+    .register-data{
+        margin: 12vw;
+    }
+
+    .input-field{
+        height: 48px;
+    }
+
+    .register-data div h6{
+        color: #9173F3;
+        margin-bottom: 50px;
+    }
+
+    .hero-section div{
+        width: 100vw;
+    }
+
+    .hero-section div h1{
+        font-size: xx-large;
+        width: 90vw;
+    }
+    
+    .hero-section div h3{
+        font-size: medium;
+    }
+
+    .hero-section img{
+        filter: brightness(0.5);
+    }
+
+    .our-mission{
+        width: 100vw;
+        padding: 0px;
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+
+    .our-mission-head{
+        width: 80vw;
+    }
+
+    #hero-aboutus{
+        opacity: 0.1;
+    }
+    
+    #hero-aboutus-1{
+        opacity: 0.3;
+        width: 100vw;
+        left: 0px;  
+        top: 28px;
+    }
+    
+    #hero-aboutus-2{
+        opacity: 0.3;
+        width: 90vw;
+        right: 0px;  
+        top: 200px;
+    }
+}
+
+/*header footer if screen <350px  (SMALL MOBILE PHONE)*/
+@media only screen and (max-width: 350px){
+
+    .event-banner-row{
+        flex-direction: column;
+        align-items: left;
+        justify-content: left;
+    }
+
+    .event-clock{
+        margin-left: 0;
+    }
+}
+
+/*Coffee Grid display*/
+@media only screen and (max-width: 950px){
+    .favorites{
+        padding: 32px;
+    }
+    .favorites-container, .motorcycles-cont{
+        grid-template-columns: auto auto;
+    }
+}
+@media only screen and (max-width: 680px){
+    .favorites-container, .motorcycles-cont{
+        grid-template-columns: auto;
+    }
+}
+
+.home-hero-title{
+    width: 100vw;
+}
+
+.home-hero-desc{
+    width: 920px;
+}
+
+.our-mission-motorcycle{
+    position: absolute;
+    float: right;
+    right: 0;
+    clear: both;
+    transform: translateY(-36%);
+}
+
+.our-mission-cont{
+    margin-top: 192px;
+    margin-bottom: 192px;
+}
+
+.home-gallery{
+    display: flex;
+    width: 100%;
+    margin-bottom: 11.25rem;
+}
